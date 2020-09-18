@@ -9,6 +9,7 @@ const Site = {
   siteUrl: 'https://hendrikbursian.netlify.app', // No trailing slash
   pathPrefix: '/', // Use starting and trailing slash
   titleTemplate: '%s  | Hendrik Bursian',
+  icon: './src/favicon.png',
 }
 
 const Typescript = {
@@ -168,7 +169,7 @@ const PWA = {
     maskableIcon: true, // Optional
 
     // Standard Meta Tags
-    svgFavicon: 'favicon.svg', // Optional. Requires favicon.ico fallback
+    svgFavicon: '/favicon.svg', // Optional. Requires favicon.ico fallback
 
     // Microsoft Windows Meta Tags
     msTileColor: '#ffffff', // Optional
