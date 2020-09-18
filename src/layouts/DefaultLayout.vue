@@ -1,5 +1,10 @@
 <template>
-  <div class="flex flex-col bg-beige-100 text-beige-900 debug-screens">
+  <div
+    class="flex flex-col bg-beige-100 text-beige-900"
+    :class="{
+      'debug-screens': process.env.NODE_ENV === 'development',
+    }"
+  >
     <Navbar />
     <slot />
   </div>
