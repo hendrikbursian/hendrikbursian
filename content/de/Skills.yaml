@@ -1,0 +1,125 @@
+lang: de
+skills:
+  - name: Vue
+    link: https://vuejs.org/
+    experience:
+      - Mehrere private Projekte.
+
+  - name: Angular
+    link: https://angular.io/
+    experience:
+      - 3 Jahre berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: Tailwindcss
+    link: https://tailwindcss.com/
+    experience:
+      - Mehrere private Projekte.
+
+  - name: Gridsome
+    link: https://gridsome.org/
+    experience:
+      - Mehrere private Projekte.
+
+  - name: Hugo
+    link: https://gohugo.io/
+    experience:
+      - Über Ein Jahr berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: HTML
+    experience:
+      - 4 Jahre Jahr berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: CSS
+    experience:
+      - 4 Jahre berufliche Erfahrung.
+      - Mehrere private Projekte.
+      - 'Nutzung mit <em>SCSS</em> & <em>Stylus</em> (Preprocessors).'
+
+  - name: Typescript
+    link: https://www.typescriptlang.org/
+    experience:
+      - 3 Jahre berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: Javascript
+    link: https://developer.mozilla.org/en-US/docs/Web/javascript
+    experience:
+      - 3 Jahre berufliche Erfahrung.
+
+  - name: NodeJS
+    link: https://nodejs.org/
+    experience:
+      - 2 Jahre berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: C# & .NET
+    link: https://en.wikipedia.org/wiki/C_Sharp_%28programming_language%29
+    experience:
+      - Ein Jahr berufliche Erfahrung.
+
+  - name: GraphQL
+    link: https://graphql.org/
+    experience:
+      - Berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: SQL
+    experience:
+      - 2 Jahre berufliche Erfahrung.
+
+  - name: Docker
+    link: https://www.docker.com/
+    experience:
+      - Ein Jahr berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: Docker Compose
+    link: https://docs.docker.com/compose/
+    experience:
+      - Ein Jahr berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: Kubernetes
+    link: https://kubernetes.io/
+    experience:
+      - Berufliche Erfahrung.
+
+  - name: Figma
+    link: https://www.figma.com/
+    experience:
+      - Ein Jahr berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: Nginx
+    link: https://nginx.org/en/
+    experience:
+      - 2 Jahre berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: Git
+    link: https://git-scm.com/
+    experience:
+      - Über 5 Jahre private und berufliche Erfahrung.
+
+  - name: GitLab
+    link: https://en.wikipedia.org/wiki/GitLab
+    experience:
+      - 2 Jahre berufliche Erfahrung.
+      - Mehrere private Projekte.
+
+  - name: GitHub
+    link: https://github.com/
+    experience:
+      - Mehrere private Projekte.
+
+  - name: Bitbucket
+    link: https://bitbucket.org/
+    experience:
+      - Ein Jahr berufliche Erfahrung.
+
+  - name: Continous Integration
+    experience:
+      - Praktische Erfahrungen mit <em>GitlabCI</em>, <em>CircleCI</em> und <em>Netlify</em>.

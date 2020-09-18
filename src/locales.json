@@ -1,0 +1,54 @@
+{
+  "en": {
+    "headings": {
+      "education": "Education",
+      "experience": "Business Experience",
+      "skills": "Skills"
+    },
+    "contact": "Contact",
+    "label": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    },
+    "hint": {
+      "confirm": "Press {enter} or {tab} to {confirmTerm}.",
+      "confirmTerm": "confirm",
+      "send": "Press {ctrl} + {enter} to {sendTerm}.",
+      "sendTerm": "send your message",
+      "enter": "Enter",
+      "ctrl": "Ctrl",
+      "tab": "Tab"
+    },
+    "thankyou": "Thank you for your message.",
+    "footer": {
+      "credit": "Inspired by"
+    }
+  },
+  "de": {
+    "headings": {
+      "education": "Ausbildung",
+      "experience": "Berufliche Erfahrung",
+      "skills": "Fähigkeiten"
+    },
+    "contact": "Kontakt",
+    "label": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Nachricht"
+    },
+    "hint": {
+      "confirm": "Drück {enter} oder {tab} um Deine Eingabe zu {confirmTerm}.",
+      "confirmTerm": "bestätigen",
+      "send": "Drück {ctrl} + {enter} um Deine Nachricht zu {sendTerm}.",
+      "sendTerm": "senden",
+      "enter": "Enter",
+      "ctrl": "Strg",
+      "tab": "Tab"
+    },
+    "thankyou": "Vielen Dank für Deine Nachricht.",
+    "footer": {
+      "credit": "Inspiriert durch"
+    }
+  }
+}

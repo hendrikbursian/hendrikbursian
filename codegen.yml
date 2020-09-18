@@ -1,0 +1,63 @@
+overwrite: true
+schema: http://localhost:8080/___graphql
+# documents:
+  # - ./src/**/*.vue:
+  #     loader: ./gridsome-vue-loader.js
+
+hooks:
+  afterAllFileWrite:
+    - eslint --fix
+
+generates:
+  ./graphql.schema.json:
+    plugins:
+      - introspection:
+          minify: false
+  ./src/types/Gridsome.gql.ts:
+    plugins:
+      - typescript:
+          constEnums: true
+          enumsAsTypes: true
+          numericEnums: false
+          futureProofEnums: false
+          enumsAsConst: true
+          onlyOperationTypes: false
+          immutableTypes: false
+          maybeValue: T | null
+          noExport: false
+          enumPrefix: true
+          fieldWrapperValue: T
+          wrapFieldDefinitions: false
+          typesPrefix: ""
+          typesSuffix: ""
+          skipTypename: false
+          nonOptionalTypename: false
+          useTypeImports: false
+  # ./src/:
+  #   preset: near-operation-file
+  #   presetConfig:
+  #     extension: .gql.d.ts
+  #     baseTypesPath: ./types/Gridsome.ts
+  #     cwd: ./
+  #   plugins:
+  #     - typescript-operations:
+  #         immutableTypes: false
+  #         flattenGeneratedTypes: false
+  #         noExport: false
+  #         addOperationExport: true
+  #         preResolveTypes: false
+  #         skipTypeNameForRoot: false
+  #         operationResultSuffix: ""
+  #         dedupeOperationSuffix: false
+  #         omitOperationSuffix: false
+  #         exportFragmentSpreadSubTypes: true
+  #         enumPrefix: true
+  #         fieldWrapperValue: T
+  #         wrapFieldDefinitions: false
+  #         onlyOperationTypes: false
+  #         typesPrefix: ""
+  #         typesSuffix: ""
+  #         skipTypename: false
+  #         nonOptionalTypename: false
+  #         useTypeImports: false
+
