@@ -2,16 +2,15 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 // NEEDS TO STAY ON TOP!
-import 'typeface-oswald'
-import 'typeface-eb-garamond'
-import 'v-tooltip/dist/v-tooltip.css'
 import '@/assets/tailwind.styl'
+import ButtonLink from '@/components/ButtonLink.vue'
 // NEEDS TO STAY ON TOP!
-
 import VueCompositionApi from '@vue/composition-api'
+import 'typeface-eb-garamond'
+import 'typeface-oswald'
 import VTooltip from 'v-tooltip'
+import 'v-tooltip/dist/v-tooltip.css'
 import { ClientApiConstructor } from './types/ClientApiConstructor'
-import ButtonLink from '@/components/ButtonLink.vue';
 
 const client: ClientApiConstructor = (Vue, { head }) => {
   Vue.use(VueCompositionApi)
@@ -30,13 +29,11 @@ const client: ClientApiConstructor = (Vue, { head }) => {
     head.meta = []
   }
 
-  // TODO
   head.meta.push({
     name: 'author',
     content: 'Hendrik Bursian',
   })
 
-  // TODO
   head.meta.push({
     name: 'keywords',
     content:
@@ -45,21 +42,18 @@ const client: ClientApiConstructor = (Vue, { head }) => {
 
   head.meta.push({
     name: 'description',
-    content:
-      'Welcome to my personal website. Take a look at my portfolio and my blog.',
+    content: 'This is my website. Take a look at my portfolio and my blog.',
   })
 
   // Open Graph + Twitter meta tags
   head.meta.push({
     property: 'og:description',
-    content:
-      'Welcome to my personal website. Take a look at my portfolio and my blog.',
+    content: 'Welcome to my website. Take a look at my portfolio and my blog.',
   })
 
   head.meta.push({
     name: 'twitter:description',
-    content:
-      'Welcome to my personal website. Take a look at my portfolio and my blog.',
+    content: 'Welcome to my website. Take a look at my portfolio and my blog.',
   })
 
   head.meta.push({
@@ -79,30 +73,24 @@ const client: ClientApiConstructor = (Vue, { head }) => {
       'Hendrik Bursian - Web Developer for Websites and Web Applications with Vue, Typescript & Tailwindcss',
   })
 
-  // TODO
   head.meta.push({
     name: 'twitter:card',
     content: 'summary_large_image',
   })
 
-  // TODO
-  // head.meta.push({
-  //   name: 'twitter:creator',
-  //   content: '@hendrikbursian',
-  // })
-
-  // TODO
   head.meta.push({
-    property: 'og:image',
-    content:
-      'https://gridsome-starter-tulip.netlify.com/img/social-preview.png',
+    name: 'twitter:creator',
+    content: '@hendrikbursian',
   })
 
-  // TODO
+  head.meta.push({
+    property: 'og:image',
+    content: 'https://hendrikbursian.netlify.app/favicon.ico',
+  })
+
   head.meta.push({
     name: 'twitter:image',
-    content:
-      'https://gridsome-starter-tulip.netlify.com/img/social-preview.png',
+    content: 'https://hendrikbursian.netlify.app/favicon.ico',
   })
 }
 

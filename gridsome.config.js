@@ -95,41 +95,39 @@ const TailwindCSS = {
   },
 }
 
-// TODO
 const CriticalCSS = {
   use: '@gridsome/plugin-critical',
   options: {
     paths: [Site.pathPrefix],
-    width: 1440,
-    height: 900,
+    width: 1024,
+    height: 920,
   },
 }
 
-const RSS = {
-  use: 'gridsome-plugin-rss',
-  options: {
-    contentTypeName: 'BlogPost',
-    feedOptions: {
-      // TODO
-      title: 'My Awesome Blog',
-      feed_url: `${Site.siteUrl}${Site.pathPrefix}rss.xml`,
-      site_url: Site.siteUrl,
-    },
-    feedItemOptions: (node) => ({
-      title: node.title,
-      description: node.description,
-      // TODO
-      url: `${Site.siteUrl}${Site.pathPrefix}post/${node.slug}`,
-      author: node.author,
-    }),
-    output: {
-      dir: './static',
-      name: 'rss.xml',
-    },
-  },
-}
+// const RSS = {
+//   use: 'gridsome-plugin-rss',
+//   options: {
+//     contentTypeName: 'BlogPost',
+//     feedOptions: {
+//       // TODO
+//       title: 'My Awesome Blog',
+//       feed_url: `${Site.siteUrl}${Site.pathPrefix}rss.xml`,
+//       site_url: Site.siteUrl,
+//     },
+//     feedItemOptions: (node) => ({
+//       title: node.title,
+//       description: node.description,
+//       // TODO
+//       url: `${Site.siteUrl}${Site.pathPrefix}post/${node.slug}`,
+//       author: node.author,
+//     }),
+//     output: {
+//       dir: './static',
+//       name: 'rss.xml',
+//     },
+//   },
+// }
 
-// TODO
 const Sitemap = {
   use: '@gridsome/plugin-sitemap',
   options: {
@@ -155,40 +153,28 @@ const PWA = {
     // Service Worker Options
     disableServiceWorker: false,
     serviceWorkerPath: 'service-worker.js',
-    // TODO
-    cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
+    cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif,woff2',
 
     // Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
     manifestPath: 'manifest.json',
-    // TODO
-    title: 'Gridsome',
-    // TODO
-    shortName: 'Gridsome',
+    title: 'Hendrik Bursian',
+    shortName: 'HB',
     startUrl: '/',
-    // TODO
     display: 'fullscreen', // standalone, fullscreen, minimal-ui
     statusBarStyle: 'default',
-    // TODO
     themeColor: '#ffffff',
-    // TODO
     backgroundColor: '#ffffff',
-    // TODO
     icon: 'src/favicon.png',
-    // TODO
     maskableIcon: true, // Optional
 
     // Standard Meta Tags
-    // TODO
     svgFavicon: 'favicon.svg', // Optional. Requires favicon.ico fallback
 
     // Microsoft Windows Meta Tags
-    // TODO
     msTileColor: '#ffffff', // Optional
 
     // Apple MacOS Meta Tags
-    // TODO
     appleMaskIcon: 'favicon.png', // Optional
-    // TODO
     appleMaskIconColor: '#ffffff', // Optional
   },
 }
